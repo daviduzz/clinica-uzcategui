@@ -1,0 +1,263 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Montserrat;	
+}
+
+.header {
+	background: #79B4B7;
+	padding: 30px 20px;
+	z-index: 1;
+	position: sticky;
+}
+
+.header__content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header__content--barranav {
+	list-style-type: none;
+	display: flex;
+}
+
+
+.header__content a {
+	margin:  0 15px;
+	color: whitesmoke;
+	text-decoration: none;
+}
+
+.mainsect {
+	display: flex;
+	justify-content: center;
+	background: #F8F0DF;
+}
+
+.header__content--title {
+	pointer-events: none;
+	justify-content: center;
+}
+
+
+.formulario {
+	/*padding: 0px 300px 0 100px;*/
+	margin: 50px 50px;
+	display: inline-block;
+}
+
+.formulario__content {
+	display: flex;
+	flex-direction: column;
+}
+
+.formulario__content input {
+	width: 200px;
+	margin-top: 10px;
+}
+
+.formulario__content button {
+	margin: 15px 15px;
+	width: 80px;
+}
+
+.formulario__content fieldset {
+	width: 80px;
+	margin: 5px;
+}
+
+
+a {
+	text-decoration: none;
+}
+
+.body {
+	background: #F8F0DF;
+}
+
+.sect-contact__title {
+	display: flex;
+	justify-content: center;
+	margin-top: 5px;
+	font-size: 25px;
+}
+
+.sect-contact {
+	background: #F8F0DF;
+	margin: 5px;
+	padding: 10px;
+}
+
+.sect-contact--field {
+	display: flex;
+	justify-content: center;
+	border: none;
+}
+
+.titulo {
+	display: flex;
+	justify-content: center;
+	font-size: 30px;
+	margin:  10px;
+}
+.main-adm {
+	display: flex;
+	justify-content: center;
+}
+
+.sect__img {
+	max-width: 700px;
+	max-height: 700px;
+	border-radius: 10px;
+}
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 5px;
+}
+
+.main-index {
+	display: grid;
+	grid-template-columns: 0.5fr 1fr;
+	grid-template-rows: auto 1fr 1fr;
+	justify-content: center;
+	align-items: center;
+	justify-items: center;
+}
+
+.main-index--box1 {
+	padding: 15px 50px;
+	text-align: center;
+	background: url("../assets/images/doctor_index.jpg");
+	
+}
+
+.main-index--box2 {
+	justify-self: start;
+}
+
+.main-index--box3 {
+	padding: 15px 50px;
+	text-align: center;
+}
+
+.main-index--box4 {
+	padding: 15px 50px;
+	text-align: center;
+}
+
+#main-contact {
+	display: grid;
+	grid-template-areas: 
+	"form img"
+	"info img";
+	grid-template-columns: 0.5fr 1fr;
+	grid-template-rows: 0.5fr 1fr;
+}
+
+section#sect-contact {
+	grid-area: form;
+	justify-self: center ;
+	align-self: center;
+}
+
+section#info-contact {
+	grid-area: info;
+}
+
+section#img-contact {
+	grid-area: img;
+	justify-self: center ;
+	align-self: center;
+}
+
+#info-contact img {
+	width: 35px;
+	height: px;
+}
+
+.main-index--img {
+	max-width: 100%;
+	max-height: 100%;
+	border-radius: 5px;
+}
+
+.main-direct {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+
+}
+
+.main-direct__caja1 {
+	justify-self: center;
+	align-self: center;
+
+}
+
+.main-direct__caja2 {
+	display: flex;
+	border-left: 2px solid black;
+	padding: 400px 0;
+	align-content: center;
+	justify-content: center;
+	margin: 5px;
+}
+
+.main-direct__tarjeta {
+	border: 2px solid black;
+	width: 500px;
+	height: 180px;
+	border-radius: 5px;
+	box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 60%);
+	margin: 15px 0;
+
+}
+
+
+@media screen and (max-width: 768px){
+	.main-index {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+
+	.header__content--barranav {
+		display: none;
+	}
+
+	.header__content--title {
+		justify-content: center;
+	}
+
+	#main-contact {
+		display: grid;
+		grid-template-areas: 
+		"form"
+		"img"
+		"info";
+		grid-template-columns: 1fr;
+	}
+	section#img-contact {
+		padding: 20px;
+	}
+
+	.main-adm {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+
+	.main-adm__caja1 {
+		justify-self: center ;
+		align-self: center;
+	}
+
+	.main-adm__caja2 {
+		padding: 10px;
+		justify-self: center ;
+		align-self: center;
+	}
+}
+
+font-family: 'Montserrat', sans-serif;
