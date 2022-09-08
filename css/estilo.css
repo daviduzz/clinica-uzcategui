@@ -67,7 +67,6 @@
 	margin: 5px;
 }
 
-
 a {
 	text-decoration: none;
 }
@@ -83,16 +82,9 @@ a {
 	font-size: 25px;
 }
 
-.sect-contact {
-	background: #F8F0DF;
-	margin: 5px;
-	padding: 10px;
-}
-
-.sect-contact--field {
-	display: flex;
-	justify-content: center;
-	border: none;
+.main-adm__caja1 {
+	width: 500px;
+	margin-right: 50px;
 }
 
 .titulo {
@@ -131,8 +123,6 @@ a {
 .main-index--box1 {
 	padding: 15px 50px;
 	text-align: center;
-	/*background: url("../assets/images/doctor_index.jpg");*/
-	
 }
 
 .main-index--box2 {
@@ -154,8 +144,8 @@ a {
 	grid-template-areas: 
 	"form img"
 	"info img";
-	grid-template-columns: 0.5fr 1fr;
-	grid-template-rows: 0.5fr 1fr;
+	grid-template-columns: 500px 1fr;
+	grid-template-rows: 500px 1fr;
 }
 
 section#sect-contact {
@@ -165,10 +155,12 @@ section#sect-contact {
 }
 
 section#info-contact {
+	padding: 15px;
 	grid-area: info;
 }
 
 section#img-contact {
+	margin: 10px;
 	grid-area: img;
 	justify-self: center ;
 	align-self: center;

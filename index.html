@@ -4,11 +4,13 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>Bienvenido a Clinica Santa Victoria</title>
-		<link rel="stylesheet" type="text/css" href="./css/estilo.css">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
-		<link rel="icon" href="./assets/icons/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="./css/estilo.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet" />
+		<link rel="icon" href="./assets/icons/favicon.ico" />
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 	</head>
 	<body class="body">
 		<header class="header">
@@ -25,7 +27,52 @@
 				</nav>
 			</div>
 		</header>
-		<main class="main-index">
+		<main class="">
+			<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  				<div class="carousel-indicators">
+	    			<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+	    			<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+	    			<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+	  			</div>
+			  <div class="carousel-inner">
+				    <div class="carousel-item active" data-bs-interval="10000">
+				      <img src="./assets/images/doctor_index.jpg" class="d-block w-100 w-75 p-3 h-75 d-inline-block"  />
+				      <div class="carousel-caption bg-dark p-2 bg-opacity-75  d-md-block text-white">
+				        <h5>Bienvenido</h5>
+				        <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				      </div>
+				    </div>
+
+				    <div class="carousel-item" data-bs-interval="2000">
+				      <img src="./assets/images/doctor2_index.jpg" class="d-block w-100 w-75 p-3 h-75 d-inline-block" />
+				      <div class="carousel-caption bg-dark p-2 bg-opacity-75  d-md-block text-white">
+				        <h5>Sobre Nosostros</h5>
+				        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				      </div>
+				    </div>
+
+				    <div class="carousel-item">
+				      <img src="./assets/images/doctor3_index.jpg" class="d-block w-100 w-75 p-3 h-75 d-inline-block" />
+				      <div class="carousel-caption bg-dark p-2 bg-opacity-75  d-md-block text-white">
+				        <h5>Misión y visión</h5>
+				        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				      </div>
+				    </div>
+			  </div>
+			  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			    <span class="visually-hidden">Previous</span>
+			  </button>
+			  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			    <span class="visually-hidden">Next</span>
+			  </button>
+			</div>
+		</main>
+
+
+
+		<!-- <main class="main-index">
 				<div class="main-index--box1">
 					<h2>Bienvenido</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -35,6 +82,8 @@
 					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</div>
+
+
 				<div class="main-index--box2">
 					<img src="./assets/images/doctor_index.jpg" class="main-index--img" />
 				</div>
@@ -48,6 +97,8 @@
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> 
 				</div>
 				<div><p><img src="./assets/images/doctor2_index.jpg" class="main-index--img" /></p> </div>
+
+
 				<div class="main-index--box4">
 					<h2>Misión y visión</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -58,7 +109,7 @@
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</div>
 				<div><img src="./assets/images/doctor3_index.jpg" class="main-index--img" /></div>	
-		</main>
+		</main> -->
 		<footer>
 			<hr />
 			<div class="footer">

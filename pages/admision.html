@@ -9,6 +9,8 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
 		<link rel="icon" href="../assets/icons/favicon.ico">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 	</head>
 	<body class="body">
 		<header class="header">
@@ -30,44 +32,56 @@
 			</div>	
 			<div class="main-adm">
 				<div class="main-adm__caja1">
-					<section class="sect-contact">
-					<h3 class="sect-contact__title">Asunto</h3>
+					<h4 class="sect-contact__title">Asunto</h4>
+
 					<fieldset class="sect-contact--field">
-						<select>
+						<select class="form-select">
 							<option>Presupuesto</option>
 							<option>Admision</option>
 						</select>
 					</fieldset>
-					<h3 class="sect-contact__title">Complete sus datos</h3>
-					<form class="formulario">
-						<div class="formulario__content">
-							<label for="nombre">Nombre: </label>
-							<input type="text" id="nombre" placeholder="Nombre" />
-							<label for="apellido">Apellido: </label>
-							<input type="text" id="apellido" placeholder="Apellido" />
-							<label for="email">Correo electronico: </label>
-							<input type="email" id="email" placeholder="Correo electronico">
-							
-								<label>¿Posee seguro?</label>
-								<input type="radio" name="seguro" />
-								<legend>Si</legend>
-								<input type="radio" name="seguro" />No
-								
-							<fieldset class="sect-contact--field">
-								<label>Seleccione su seguro</label>
-								<select>
-									<option>Ninguno</option>
+
+					<h4 class="sect-contact__title">Complete sus datos</h4>
+					<form>
+							<label for="exampleFormControlInput1" class="form-label">Nombre: </label>
+							<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre" />
+
+
+							<label for="exampleFormControlInput2" class="form-label">Apellido: </label>
+							<input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Apellido" />
+
+
+							<label for="exampleFormControlInput3" class="form-label">Correo electronico: </label>
+							<input type="email" class="form-control" id="exampleFormControlInput3" placeholder="Correo electronico">
+
+							<h4>¿Posee seguro?</h4>
+							<div class="form-check">
+								<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+								<label class="form-check-label" for="flexRadioDefault1">Si</label>
+							</div>
+							<div class="form-check">	
+								<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" />
+								<label class="form-check-label" for="flexRadioDefault2">No</label>
+							</div>	
+
+							<h4>Seleccione su seguro</h4>
+							<div>
+								<select class="form-select" aria-label="Disabled select example" disabled>
+									<option>Lista de seguro</option>
 									<option>Seguro 1</option>
 									<option>Seguro 2</option>
 								</select>
-							</fieldset>
-							<label for="termino">Acepto terminos y condiciones</label>
-							<input type="checkbox" id="termino" />
-							<button type="submit">ENVIAR</button>
-							<button type="reset">LIMPIAR</button> 
-						</div>	 
+							</div>
+
+							<div class="form-check">
+							<label class="form-check-label" for="flexCheckDefault">Acepto terminos y condiciones</label>
+							<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+							</div>
+
+							<button type="submit" class="btn btn-primary" disabled>ENVIAR</button>
+							<button type="reset" class="btn btn-outline-danger">LIMPIAR</button> 
+	 
 					</form>	
-					</section>
 				</div>
 				<div class="main-adm__caja2">
 					<img src="../assets/images/doctor_admision.jpg" class="sect__img" />
