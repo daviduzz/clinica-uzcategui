@@ -1,0 +1,100 @@
+@media screen and (max-width: 768px){
+	.header {
+		position: initial;
+	}
+
+	.main-index {
+		display: grid;
+		grid-template-columns: 1fr;
+		padding-top: 0;
+	}
+
+	.header__content--barranav {
+		display: inline-block;
+	}
+
+	.header__content--title {
+		justify-content: center;
+	}
+
+	#main-contact {
+		display: grid;
+		grid-template-areas: 
+		"form"
+		"img"
+		"info";
+		grid-template-columns: 1fr;
+	}
+	section#img-contact {
+		padding: 20px;
+	}
+
+	.main-adm {
+		display: flex;
+		grid-template-columns: 1fr;
+		padding: 1px;
+	}
+
+	.main-adm select {
+		width: 75%;
+	}
+
+	.main-adm__caja1 {
+		justify-self: center ;
+		align-self: center;
+	}
+
+	.main-adm__caja2 {
+		display: none;
+	}
+
+	.main-direct__caja1 {
+		display: none;
+	}
+
+	.main-direct__caja2 h3 {
+	display: contents;
+	text-align: center;
+}
+
+	.main-direct__caja2 {
+		display: inline-block;
+		width: 100%;
+		border: none;
+		padding: 0;
+	}
+
+	#main-contact {
+		display: flex;
+		flex-direction: column;
+	}
+
+	#img-contact {
+		max-width: 50%;
+		max-height: 50%;
+	}
+
+	.carousel {
+		display: none;
+	}
+
+	.index-movil {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.index-movil__img {
+		max-height: auto;
+		max-width: 100%;
+		
+	}
+
+	.index-movil__text h2 {
+		text-align: center;
+	}
+	.index-movil__text {
+		text-align: justify;
+	}
+}
+
+font-family: 'Montserrat', sans-serif;

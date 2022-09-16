@@ -1,0 +1,29 @@
+.header {
+	background: #79B4B7;
+	padding: 30px 20px;
+	z-index: 1;
+	position: fixed;
+	width: 100%;
+	top: 0;
+}
+.header__content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header__content--barranav {
+	list-style-type: none;
+	display: flex;
+}
+
+
+.header__content a {
+	margin:  0 15px;
+	color: whitesmoke;
+	text-decoration: none;
+}
+
+.header__content--title {
+	pointer-events: none;
+	justify-content: center;
+}
