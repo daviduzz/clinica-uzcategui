@@ -1,28 +1,22 @@
 .main-adm {
-	display: flex;
-	justify-content: center;
+	@include flex (center);
 	padding-top: 100px;
 		h3 {
-		display: flex;
-		justify-content: center;
+		@include flex (center);
 		font-size: 30px;
 		margin:  10px;
 		}
 		h4 {
-		display: flex;
-		justify-content: center;
+		@include flex (center);
 		margin-top: 5px;
 		font-size: 25px;
 		}
-}
-
-.main-adm__caja1 {
+	&__caja1 {
 	width: 500px;
 	margin-right: 50px;
+	}
+	&__img	{
+		@extend .imagen;
+	}
 }
 
-.main-adm__img {
-	max-width: 700px;
-	max-height: 700px;
-	border-radius: 10px;
-}

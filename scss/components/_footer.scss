@@ -3,4 +3,30 @@
 	justify-content: space-between;
 	align-items: center;
 	margin: 5px;
+	padding: 30px 15px;
+	
+
+	&__rrss {
+		@include flex (space-evenly);
+		
+
+		$coloresrs: (
+			twitter:#55acee,
+			instagram:#c92d8f,
+			linkedin:#2279e4,
+		);
+		
+		@each  $nameSocialMedia, $colorIcon in $coloresrs {
+			.rs-#{$nameSocialMedia}{
+				transition: all 0.3s;
+				font-size: 35px;
+				color: gray;
+			&:hover {
+          	color: $colorIcon;	
+				}
+			}
+		}
+		
+		
+}
 }

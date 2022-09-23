@@ -7,6 +7,11 @@
 .body {
   background: #F8F0DF; }
 
+.imagen, .main-adm__img {
+  max-width: 700px;
+  max-height: 700px;
+  border-radius: 10px; }
+
 .header {
   background: #79B4B7;
   padding: 30px 20px;
@@ -14,30 +19,48 @@
   position: fixed;
   width: 100%;
   top: 0; }
-
-.header__content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
-
-.header__content--barranav {
-  list-style-type: none;
-  display: flex; }
-
-.header__content a {
-  margin: 0 15px;
-  color: whitesmoke;
-  text-decoration: none; }
-
-.header__content--title {
-  pointer-events: none;
-  justify-content: center; }
+  .header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .header__content--title {
+      pointer-events: none;
+      justify-content: center; }
+    .header__content--barranav {
+      list-style-type: none;
+      display: flex; }
+    .header__content a {
+      margin: 0 15px;
+      color: whitesmoke;
+      text-decoration: none; }
 
 .footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 5px; }
+  margin: 5px;
+  padding: 30px 15px; }
+  .footer__rrss {
+    display: flex;
+    justify-content: space-evenly; }
+    .footer__rrss .rs-twitter {
+      transition: all 0.3s;
+      font-size: 35px;
+      color: gray; }
+      .footer__rrss .rs-twitter:hover {
+        color: #55acee; }
+    .footer__rrss .rs-instagram {
+      transition: all 0.3s;
+      font-size: 35px;
+      color: gray; }
+      .footer__rrss .rs-instagram:hover {
+        color: #c92d8f; }
+    .footer__rrss .rs-linkedin {
+      transition: all 0.3s;
+      font-size: 35px;
+      color: gray; }
+      .footer__rrss .rs-linkedin:hover {
+        color: #2279e4; }
 
 .main-index {
   padding-top: 100px; }
@@ -64,15 +87,9 @@
     justify-content: center;
     margin-top: 5px;
     font-size: 25px; }
-
-.main-adm__caja1 {
-  width: 500px;
-  margin-right: 50px; }
-
-.main-adm__img {
-  max-width: 700px;
-  max-height: 700px;
-  border-radius: 10px; }
+  .main-adm__caja1 {
+    width: 500px;
+    margin-right: 50px; }
 
 #main-contact {
   padding-top: 100px;

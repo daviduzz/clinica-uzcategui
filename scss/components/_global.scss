@@ -8,3 +8,14 @@
 .body {
 	background: #F8F0DF;
 }
+
+.imagen {
+	 max-width: 700px;
+	 max-height: 700px;
+	 border-radius: 10px;
+}
+
+@mixin flex ($alinea) {
+	display: flex;
+	justify-content: $alinea;
+}
