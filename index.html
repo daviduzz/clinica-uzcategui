@@ -17,8 +17,13 @@
 	<body class="body">
 		<header class="header">
 			<div class="header__content"> 
-				<h2 class="header__content--title">Clínica Santa Victoria</h2>
+				<a href="./index.html"><h2 class="header__content--title">Clínica Santa Victoria</h2></a>
 				<nav>
+					<a data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"> 
+						<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list header__content-menu" viewBox="0 0 16 16">
+  						<path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+						</svg>  
+					</a>
 					<ul class="header__content--barranav">
 						<li ><a href="./index.html">Inicio</a></li>
 						<li ><a href="./pages/directorio.html">Directorio</a></li>
@@ -30,13 +35,14 @@
 			</div>
 		</header>
 		<main class="main-index">
-			<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-  				<div class="carousel-indicators">
-	    			<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-	    			<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-	    			<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-	  			</div>
-			  <div class="carousel-inner">
+			
+				<div id="carouselExampleDark" class="carousel carousel-dark slide carrusel" data-bs-ride="carousel">
+  					<div class="carousel-indicators">
+	    				<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+	    				<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+	    				<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+	  				</div>
+			  		<div class="carousel-inner">
 				    <div class="carousel-item active" data-bs-interval="10000">
 				      <img src="./assets/images/doctor_index.jpg" class="d-block w-100 w-75 p-3 h-75 d-inline-block"  />
 				      <div class="carousel-caption bg-dark p-2 bg-opacity-75  d-md-block text-white">
@@ -60,21 +66,40 @@
 				        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 				      </div>
 				    </div>
-			  </div>
-			  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			    <span class="visually-hidden">Previous</span>
-			  </button>
-			  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-			    <span class="visually-hidden">Next</span>
-			  </button>
-			</div>
+			  		</div>
+			  		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+			    		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			    		<span class="visually-hidden">Previous</span>
+			  		</button>
+			  		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+			    		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			   		 	<span class="visually-hidden">Next</span>
+			  		</button>			
+				</div>	
 
 			<div class="index-movil">
+				
+				<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+  				<div class="offcanvas-header">
+    				<h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"><i class="bi bi-hospital"></i>  Menú</h5>
+    				<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  				</div>
+  				<div class="offcanvas-body">
+  					<hr />
+  					<nav>
+					<ul class="header__content--barranavmovil">
+						<li ><a href="./index.html">Inicio</a></li>
+						<li ><a href="./pages/directorio.html">Directorio</a></li>
+						<li ><a href="./pages/servicios.html">Servicios</a></li>
+						<li ><a href="./pages/admision.html">Admision</a></li>
+						<li ><a href="./pages/contacto.html">Contacto</a></li>
+					</ul>
+					</nav>
+  				</div>
+				</div>
 
-				<div>
-					<img src="./assets/images/doctor_index.jpg"  class="index-movil__img"/>
+				<div class="statistics">
+					 <img src="./assets/images/doctor_index.jpg"  class="index-movil__img"/>
 				</div>
 
 				<div class="index-movil__text">
@@ -106,10 +131,11 @@
 			<hr />
 			<div class="footer">
 				<div>
-				<p>Todos los derechos reservados</p>
+				<p>&copy;David Uzcategui - Todos los derechos reservados.</p>
 				</div>
 
 				<div class="footer__rrss">
+					<small>¡Siguenos en nuestras redes sociales!</small>
 					<a class="rs-twitter"><i class="bi bi-twitter"></i></a>
 					<a class="rs-instagram"><i class="bi bi-instagram"></i></a>
 					<a class="rs-linkedin"><i class="bi bi-linkedin"></i></a>

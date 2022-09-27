@@ -3,13 +3,13 @@
 	justify-content: space-between;
 	align-items: center;
 	margin: 5px;
-	padding: 30px 15px;
+	padding: 10px 15px;
 	
 
 	&__rrss {
 		@include flex (space-evenly);
-		
-
+		align-items: center;
+		i {margin: 0 10px;}	
 		$coloresrs: (
 			twitter:#55acee,
 			instagram:#c92d8f,
@@ -21,12 +21,11 @@
 				transition: all 0.3s;
 				font-size: 35px;
 				color: gray;
-			&:hover {
-          	color: $colorIcon;	
-				}
+				&:hover {
+          		color: $colorIcon;
+          		}
 			}
 		}
 		
-		
-}
+	}
 }

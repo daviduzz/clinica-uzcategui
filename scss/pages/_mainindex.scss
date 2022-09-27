@@ -1,5 +1,7 @@
 .main-index {
-	padding-top: 100px;
+	display: flex;
+	padding-top: 50px;
+  	justify-content: center;
 }
 
 .main-index--img {
@@ -10,4 +12,7 @@
 
 .index-movil {
 	display: none;
+}
+.carrusel {
+  max-width: 1200px;
 }

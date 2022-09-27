@@ -1,25 +1,30 @@
 .header {
 	background: #79B4B7;
-	padding: 30px 20px;
+	padding: 25px 20px;
 	z-index: 1;
-	position: fixed;
-	width: 100%;
+	position: sticky;
 	top: 0;
 	&__content {
 		@include flex (space-between)
+		max-width: 1200px;
+		margin: 0 auto;
 		align-items: center;
-		&--title {
-		pointer-events: none;
-		justify-content: center;
-		}
+		&-menu{
+			display: none;
+		} 
+		&--title{ 
+			color: black;}
 		&--barranav {
-		list-style-type: none;
 		display: flex;
+		list-style-type: none;
 		}
 		a {
 		margin:  0 15px;
-		color: whitesmoke;
+		color: black;
 		text-decoration: none;
-		}
+		transition:all 0.3s;
+			&:hover {
+				color:green;
+			}}
 	}
 }
