@@ -139,49 +139,43 @@ section#img-contact {
   display: none; }
 
 .main-direct {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding-top: 100px; }
+  display: flex;
+  flex-direction: column; }
 
-.main-direct__caja1 {
-  justify-self: center;
-  align-self: center; }
-
-.main-direct__caja2 {
-  display: inline;
-  border-left: 2px solid black;
-  padding: 150px 150px;
-  align-items: center;
-  justify-items: center;
-  margin: 5px; }
-
-.main-direct__caja2 h3 {
-  display: none; }
+.main-direct__title h2 {
+  text-align: center; }
 
 .main-direct__tarjeta {
-  border: 2px solid black;
-  padding: 8px;
-  width: 500px;
-  height: 180px;
-  border-radius: 5px;
-  box-shadow: 0 25px 50px -12px black;
-  margin: 15px 0;
-  background-image: linear-gradient(to right, #79B4B7, #9D9D9D, #FEFBF3); }
+  padding: 15px;
+  background: #79B4B7; }
+  .main-direct__tarjeta--content {
+    display: flex;
+    flex-direction: row; }
+    .main-direct__tarjeta--content img {
+      width: 325px;
+      height: 370px; }
+
+.main-direct__tarjeta1 {
+  padding: 15px;
+  background: #9D9D9D; }
+  .main-direct__tarjeta1--content {
+    display: flex;
+    flex-direction: row; }
+    .main-direct__tarjeta1--content img {
+      width: 325px;
+      height: 370px; }
 
 .main-serv {
-  display: grid;
-  justify-items: center;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
   height: 90vh; }
 
 .main-serv__tarjeta {
   margin: 15px;
   padding: 5px;
   border: 2px solid black;
-  max-width: 100%;
-  height: 38px;
+  max-width: 40%;
+  height: 39px;
   border-radius: 5px;
   box-shadow: 0 25px 50px -12px black;
   margin: 15px 0;
@@ -223,32 +217,36 @@ section#img-contact {
     max-width: 80%;
     margin: 10px;
     padding: 0px 30px; }
-  .main-direct__tarjeta {
-    max-width: 80%; }
   .main-adm {
     display: flex;
     grid-template-columns: 1fr;
     padding: 1px; }
   .main-adm select {
     width: 75%; }
-  .main-adm__caja1 {
+  .main-adm__caja {
     justify-self: center;
     align-self: center; }
-  .main-adm__caja2 {
-    display: none; }
   .main-direct {
-    margin: 5px;
-    padding: 0 10px; }
-  .main-direct__caja1 {
-    display: none; }
-  .main-direct__caja2 h3 {
-    display: contents;
-    text-align: center; }
-  .main-direct__caja2 {
-    display: inline-block;
-    width: 100%;
-    border: none;
-    padding: 0; }
+    display: flex;
+    margin: 5px; }
+  .main-direct__tarjeta {
+    width: auto;
+    border-radius: 15px;
+    margin: 10px; }
+    .main-direct__tarjeta--content {
+      display: flex;
+      flex-direction: column; }
+  .main-direct__tarjeta1 {
+    width: auto;
+    border-radius: 15px;
+    margin: 10px; }
+    .main-direct__tarjeta1--content {
+      display: flex;
+      flex-direction: column; }
+  .main-direct__caja {
+    display: flex;
+    flex-direction: column;
+    width: 100%; }
   #main-contact {
     display: flex;
     flex-direction: column; }
