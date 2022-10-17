@@ -1,28 +1,31 @@
 .main-serv {
-	display:flex ;
-	flex-direction: column;
-	height: 90vh;
+	display: flex;
+	height: 100vh;
 }
 
 .main-serv__tarjeta {
 	margin: 15px;
 	padding: 5px;
 	border: 2px solid black;
-	max-width: 40%;
-	height: 39px;
+	width: 400px;
+	max-width: 50%;
+	height: 200px;
 	border-radius: 5px;
-	box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 60%);
+	box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 30%);
 	margin: 15px 0;
 	text-align: center;
-	transition: height 2s;
+	transition: all 2s;
 	overflow: hidden;
+	& li {
+		font-size: 19px;	
+	}
+	&:hover {
+		transform: translate(0px,50px);
+		height: 210px;
+		background-image: linear-gradient(to right, #79B4B7, #9D9D9D, #FEFBF3);
+	}
 }
-
-.main-serv__tarjeta li {
-	font-size: 19px;
-}
-
-.main-serv__tarjeta:hover {
-	height: 200px;
-	background-image: linear-gradient(to right, #79B4B7, #9D9D9D, #FEFBF3);
+.imagen1 {
+	width: 500px;
+	border-radius: 50px;
 }
